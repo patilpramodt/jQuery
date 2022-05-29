@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>jQuery Task 21</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<a href='index.html' class="my-2 d-inline-block"><i class='fa fa-arrow-left mr-2'></i>Task List</a>
+				<div class="card p-3 mb-4">
+					<h4>
+						Task 21 - Cloning same address</h3>
+						<ul class="mb-0">
+							<li>When user fills something in current address controls and click on "same as current
+								address" then current address control data should get duplicated in billing address
+								controls </li>
+							<li>If "Same as current address" check box is checked then billing address controls should
+								be in read only mode and not editable</li>
+							<li>If "Same as current address" check box is not checked then billing address controls
+								should be editable</li>
+							<li>If "Same as current address" check box is checked and user makes any changes in current
+								address should get changed in billing address as well.</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-5">
+				<form>
+					<h4>Current Address</h4>
+					<div class="form-group">
+						<label>Address</label>
+						<input type="text" class="form-control currAddress">
+					</div>
+					<div class="form-group">
+						<label>Zip</label>
+						<input type="text" class="form-control currZip">
+					</div>
+					<div class="form-group">
+						<label>City</label>
+						<input type="text" class="form-control currCity">
+					</div>
+					<div class="form-group">
+						<label>State</label>
+						<select class="form-control currState">
+							<option>Maharashtra</option>
+							<option>Karnataka</option>
+							<option>Tamilnadu</option>
+							<option>Gujrat</option>
+							<option>Telangana</option>
+						</select>
+					</div>
+				</form>
+			</div>
+			<div class="col-sm-5">
+				<form>
+					<h4>Billing Address
+						<small>
+							<input type="checkbox" id="address"> <label for="address" class="billAddress mb-0">Same as
+								current
+								address</label>
+						</small>
+					</h4>
+					<div class="form-group">
+						<label>Address</label>
+						<input type="text" class="billAddress form-control">
+					</div>
+					<div class="form-group">
+						<label>Zip</label>
+						<input type="text" class="billZip form-control">
+					</div>
+					<div class="form-group">
+						<label>City</label>
+						<input type="text" class="billCity form-control">
+					</div>
+					<div class="form-group">
+						<label>State</label>
+						<select class="form-control billState">
+							<option>Maharashtra</option>
+							<option>Karnataka</option>
+							<option>Tamilnadu</option>
+							<option>Gujrat</option>
+							<option>Telangana</option>
+						</select>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		referrerpolicy="no-referrer"></script>
+	<script src='js/app.js'></script>
+</body>
+
+</html>

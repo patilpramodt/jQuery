@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>jQuery Task 8</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<a href='index.html' class="my-2 d-inline-block"><i class='fa fa-arrow-left mr-2'></i>Task List</a>
+				<div class="card p-3 mb-4">
+					<h4>
+						Task 8 - Add row in table and remove on click of trash icon</h3>
+						<ul class="mb-0">
+							<li>When a user clicks on "Add Record", a new row should get added with dummy records</li>
+							<li>Number Should get increased with each addition of record</li>
+							<li>Click of trash icon should remove only that respective row</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<table class='table table-bordered dataTable'>
+					<thead>
+						<tr>
+							<th>No.</th>
+							<th>Name</th>
+							<th>Surname</th>
+							<th>Age</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody id="tbody">
+						<tr>
+							<td><span></span></td>
+							<td>John</td>
+							<td>Pendargast</td>
+							<td>40</td>
+							<td class='text-center'><i class="far fa-trash-alt delRow"></i></td>
+						</tr>
+						<tr>
+							<td><span></span></td>
+							<td>Paul</td>
+							<td>Hudson</td>
+							<td>38</td>
+							<td class='text-center'><i class="far fa-trash-alt delRow"></i></td>
+						</tr>
+						<tr>
+							<td><span></span></td>
+							<td>Paul</td>
+							<td>Hudson</td>
+							<td>37</td>
+							<td class='text-center'><i class="far fa-trash-alt delRow"></i></td>
+						</tr>
+						<tr>
+							<td><span></span></td>
+							<td>Ken</td>
+							<td>Mcgrath</td>
+							<td>42</td>
+							<td class='text-center'><i class="far fa-trash-alt delRow"></i></td>
+						</tr>
+					</tbody>
+				</table>
+				<input type="button" value="Add Record" class="btn btn-primary addRow">
+			</div>
+		</div>
+	</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		referrerpolicy="no-referrer"></script>
+	<script src='js/app.js'></script>
+</body>
+
+</html>
