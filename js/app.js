@@ -292,8 +292,8 @@ $(document).ready(function () {
       let DateToCal = new Date(getYear, getMonth, getDay);
       let age = dhm(today - DateToCal);
       function dhm(ms) {
-        const year = Math.floor(ms / (365 * 24 * 60 * 60 * 1000));
-        const yearsms = ms % (365 * 24 * 60 * 60 * 1000);
+        const year = Math.floor(ms / (365.25 * 24 * 60 * 60 * 1000));
+        const yearsms = ms % (365.25 * 24 * 60 * 60 * 1000);
         const month = Math.floor(yearsms / (30.5 * 24 * 60 * 60 * 1000));
         const monthsms = ms % (30.5 * 24 * 60 * 60 * 1000);
         const days = Math.floor(monthsms / (24 * 60 * 60 * 1000));
